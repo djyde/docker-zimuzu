@@ -12,4 +12,6 @@ sudo docker run djyde/docker-zimuzu -d --name zimuzu -p 3001:3001 -v /DOWNLOAD_D
 
 ## Build
 
+```bash
 sudo docker build . -t djyde/docker-zimuzu
+```
