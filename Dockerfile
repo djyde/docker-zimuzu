@@ -23,4 +23,4 @@ RUN echo " \
 
 VOLUME [ "/data" ]
 
-CMD [ "/app/rrshareweb" ]
+CMD [ "/app/rrshareweb/rrshareweb" ]
