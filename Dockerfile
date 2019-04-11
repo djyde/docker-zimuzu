@@ -9,7 +9,7 @@ RUN mkdir -p /data
 
 # ADD rrshareweb /app/
 
-RUN wget https://appdown.rrysapp.com/rrshareweb_centos7.tar.gz && tar -xzvf rrshareweb_centos7.tar.gz -C /app
+RUN curl https://appdown.rrysapp.com/rrshareweb_centos7.tar.gz && tar -xzvf rrshareweb_centos7.tar.gz -C /app
 
 RUN echo " \
 { \
