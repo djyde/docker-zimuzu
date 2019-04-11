@@ -7,7 +7,9 @@ ENV PORT=3001
 
 RUN mkdir -p /data
 
-ADD rrshareweb /app/
+# ADD rrshareweb /app/
+
+RUN wget https://appdown.rrysapp.com/rrshareweb_centos7.tar.gz && tar -xzvf rrshareweb_centos7.tar.gz -C /app
 
 RUN echo " \
 { \
@@ -17,7 +19,7 @@ RUN echo " \
     \"loglevel\" : 1, \
     \"logpersistday\" : 2, \
     \"defaultsavepath\" : \"/data\" \
-}" >> /app/conf/rrshare.json
+}" >> /app/rrshareweb/conf/rrshare.json
 
 VOLUME [ "/data" ]
 
