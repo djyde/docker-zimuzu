@@ -1,7 +1,7 @@
 FROM centos:7
 
 LABEL maintainer="Randy<randypriv@gmail.com>" \
-  version="0.0.1"
+  version="1.0.0"
 
 ENV PORT=3001
 
