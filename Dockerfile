@@ -8,7 +8,7 @@ ENV PORT=3001
 RUN mkdir -p /data
 RUN mkdir -p /rrshareweb
 
-RUN curl https://appdown.rrysapp.com/rrshareweb_centos7.tar.gz -o rrshareweb_centos7.tar.gz && tar -xzvf rrshareweb_centos7.tar.gz -C /rrshareweb
+RUN curl http://appdown.rrys.tv/rrshareweb_linux_2.20.tar.gz -o rrshareweb_linux_2.20.tar.gz && tar -xzvf rrshareweb_linux_2.20.tar.gz -C /rrshareweb
 
 RUN echo " \
 { \
